@@ -1,0 +1,18 @@
+account:
+  account_id: "xxxxxx"
+  region: 'ap-northeast-1'
+dns:
+  domain_name: 'example.com'
+  certificate_arn: 'arn:aws:acm:ap-northeast-1:xxxxxx:xxxxxxx'
+vpc:
+  cidr: '10.0.0.0/16'
+ecs:
+  container_name: 'WordpressImageExample'
+  repository_arn: 'arn:aws:ecr:ap-northeast-1:xxxxxx:xxxxxxx'
+autoscaling:
+  max_capacity: 4
+  min_capacity: 2
+pipeline:
+  repository_name: 'xxxxxx/xxxxxx'
+  branch: 'main'
+  connection_arn: 'arn:aws:codestar-connections:ap-northeast-1:xxxxxx:connection/xxxxxx'
